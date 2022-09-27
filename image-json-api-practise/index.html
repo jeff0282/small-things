@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+        <script type="text/javascript" src="script/images.js"></script>
+        <script type="text/javascript" src="script/colours.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+
+    <body id="body">
+
+        <!-- Selection Window -->
+        <div class="selection-window window" id="selectionWindow"> 
+            <h1 style="margin-bottom: 0";> API Image Practice Thingy </h1>
+            <h4 style="margin-top: 0; color: gray;"> Made Possible by Various APIs </h4>
+            <form id="form">
+                <p style="margin-bottom: 5px;">Please Select Your Desired Image:</p>
+                <h6 style="margin-top: 5px; color: red;"> (Potentially NSFW - Be Warned) </h6>
+                <input type="radio" id="catboy" name="imageType" value="catboy">
+                <label for="catboy">Catboy</label>
+                <input type="radio" id="catgirl" name="imageType" value="catgirl">
+                <label for="catgirl">Catgirl</label>
+                <input type="radio" id="cat" name="imageType" value="cat">
+                <label for="cat">Cat</label>
+                <input type="radio" id="duck" name="imageType" value="duck">
+                <label for="duck">Duck</label>
+                <input type="radio" id="cuddle" name="imageType" value="cuddle">
+                <label for="cuddle">Cuddle</label>
+                <br><br>
+                <div class="bottom-buttons-selection">
+                    <button type="button" onclick="display()">Generate Image</button>
+                    <button type="button" onclick="randomBodyColor()">Random Background Color</button>
+                </div>
+            </form>
+
+        </div>
+            
+            
+            
+            
+            
+        <!--DISPLAY WINDOW-->
+        <div class="display-window window" id="displayWindow">
+            <h1 style="margin-bottom: 0";>  JeffOnline Image Thingy !! </h1>
+            <h4 style="margin-top: 0; color: gray;"> Made Possible by Various APIs </h4>
+            <div>
+                <a id="original"><img alt="loading..." id="imageDisplay"></a>
+            </div>
+
+            <p id="artistText"></p>
+
+            <div class="bottom-buttons-display">
+                <button id="backgroundImage" onclick="setBackgroundImage()">Set Background Image</button>
+                <button id="refesh" onclick="display()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                <button id="back" onclick="selectionWindow()">Go Back</button>
+            </div>
+        </div>
+        
+        </div>
+
+    </body>
+</html>

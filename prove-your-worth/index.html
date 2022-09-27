@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="image/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+		<title> Prove Your Worth </title>
+    </head>
+
+    <body>
+        <div class="page-container">
+            <div class="titlebar">
+                <span><img src="image/commie-leaders.png" width="50%"><img class="flipped-img" src="image/commie-leaders.png" width="50%"></span>
+                <hr style="margin: 5px;">
+                <p id="watermark"> Travis Fulton Campbell - 2022</p>
+                <hr>
+                <img src="image/prove-your-worth.gif" width="100%">
+            </div>
+
+            <br><br>
+
+            <div id="welcome-stage" class="main-section">
+                <h2> Prove Your Commitment To The Proletarian Struggle, By Typing The Entirety Of: </h2>
+                <h1> "The Manifesto of the Communist Party" </h1>
+                <br>
+                <button onclick="challengeStage()">Start</button>
+            </div>
+
+            <div id="challenge-stage" class="main-section">
+                <h2> Type The Entirety Of: </h2>
+                <h1> "The Manifesto of the Communist Party" </h1>
+                <h6><a href="https://github.com/miguelvelezmj25/gossip-protocol/blob/master/resource/The%20Communist%20Manifesto.txt">[source used]</a></h6>
+                <br><br>
+                <h3 style="text-align: left">The Manifesto of the Communist Party</h3>
+                <textarea id="textInput" placeholder="Start Here....."></textarea>
+            </div>
+
+            <div id="mistake-popup">
+                <h2> You Fucked Up Comrade </h2>
+                <h4> You're Permitted 3 Mistakes </h4>
+                <h4> You've Fucked Up: <span id="number-of-mistakes"></span> Times!</h4>
+                <button onclick="dismissMistakePopup()">Dismiss</button>
+            </div>
+
+            <div id="final-mistake-background"></div>
+            <div id="final-mistake-foreground">
+                <img src="image/stalin.gif">
+                <h2> Your Have Displayed A Lack Of Knowledge of Socialism </h2>
+                <br>
+                <h2> The KGB Have Been Dispatched To Your Location </h2>
+                <h3 style="color: rgb(120,0,0);"> Please Await Further Instruction </h2>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
