@@ -16,7 +16,7 @@ I discussed with with a, far more knowledgable, frend of mine and he suggested "
 
 ---
 
-This is a very simple JavaScript thingy, with very simply requested images from some APIs, and puts the result in a <img> element.
+This is a very simple JavaScript thingy, which very simply requested images from some APIs, and puts the result in a <img> element.
 It also does some other stuff but it's mostly simple and gimmicky.
 
 There are many...  many issues with this (I was crap as JS)
